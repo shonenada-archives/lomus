@@ -44,3 +44,6 @@ production.conf
 
 # Virtualenv folder
 venv
+
+# Temp database
+*.sqlite

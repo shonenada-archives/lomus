@@ -28,7 +28,7 @@ def check():
 @manager.command
 def syncdb():
     with application.test_request_context():
-        from szufm.models.test import Test
+        from szufm.models.demo import Demo
         db.create_all()
     print 'Finished!'
 
