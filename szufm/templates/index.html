@@ -1,1 +1,5 @@
 {% extends 'base.html' %}
+{%- block htmlhead %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/demo.css') }}">
+    <script src="{{ url_for('static', filename='scripts/demo.js') }}" ></script>
+{%- endblock %}
