@@ -4,7 +4,7 @@ from gears_clean_css import CleanCSSCompressor
 from gears_coffeescript import CoffeeScriptCompiler
 
 
-_compilers ={
+_compilers = {
     ".less": LESSCompiler.as_handler(),
     '.coffee': CoffeeScriptCompiler.as_handler()
 }
