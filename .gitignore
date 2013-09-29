@@ -33,3 +33,7 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+
+# Bower assets components folder.
+szufm/assets/components
