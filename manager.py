@@ -4,6 +4,7 @@ from szufm.app import app
 
 
 application = app('szufm', 'development.conf')
+application.debug = True
 
 
 manager = Manager(application)
