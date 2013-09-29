@@ -1,14 +1,8 @@
 from flask import Flask
-from flask.ext.gears import Gears
-from flask.ext.sqlalchemy import SQLAlchemy
 
-from szufm.asset import setup_compilers, setup_compressors
-from szufm.database import setup_database
-from szufm.views.master import master_app
-
-
-gears = Gears()
-db = SQLAlchemy()
+from szufm.extensions import gears, db
+from szufm.extensions import setup_compilers, setup_compressors, setup_database
+from szufm.master.view import master_app
 
 
 def app(import_name=None, config=None):
