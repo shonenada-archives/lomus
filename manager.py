@@ -17,7 +17,7 @@ manager = Manager(application)
 
 @manager.command
 def clean():
-    cln
+    cln()
 
 
 @manager.command
@@ -28,7 +28,7 @@ def check():
 @manager.command
 def syncdb():
     with application.test_request_context():
-        from szufm.models.demo import Demo
+        from szufm.master.model import Demo
         db.create_all()
     print 'Finished!'
 
