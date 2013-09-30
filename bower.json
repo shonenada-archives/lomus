@@ -3,8 +3,6 @@
     "version": "0.1",
     "dependencies": {
         "jquery": "~1.10.2",
-        "bootstrap": "~3.0.0",
-        "normalize-css": "~2.0.1",
-        "reset-css": "http://meyerweb.com/eric/tools/css/reset/reset.css"
+        "pure": "~0.3.0"
     }
 }
