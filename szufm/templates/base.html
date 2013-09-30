@@ -5,13 +5,33 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="Content-Language" content="zh-CN" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='components/normalize-css/normalize.css') }}" />
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='components/reset-css/index.css') }}" />
-        <script src="{{ url_for('static', filename='components/jquery/jquery.js') }}" ></script>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='components/pure/pure-min.css') }}" />
+        <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+        <script src="{{ url_for('static', filename='components/jquery/jquery.js') }}" language="javascript"></script>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/base.css') }}" />
+        <script src="{{ url_for('static', filename='scripts/global.js') }}" language="javascript"></script>
         {%- block htmlhead %}
         {%- endblock %}
     </head>
 
     <body>
+        {%- block header %}
+        <div class="header">
+            <h1 class="large narrow-margin">SZU.FM</h1>
+            <h2>深大人自己的电台。</h2>
+        </div>
+        {%- endblock %}
+        {%- block nav %}
+        <div class="nav">
+        </div>
+        {%- endblock %}
+        {%- block main %}
+        <div class="main">
+        </div>
+        {%- endblock %}
+        {%- block footer %}
+        <div class="footer">
+        </div>
+        {%- endblock %}
     </body>
 </html>
