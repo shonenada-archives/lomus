@@ -1,1 +1,28 @@
 {% extends 'base.html' %}
+
+        {%- block htmlhead %}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/index.css') }}" />
+        <script src="{{ url_for('static', filename='scripts/index.js') }}"></script>
+        <script src="{{ url_for('static', filename='scripts/sonic-animate.js') }}"></script>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/sonic-animate.css') }}" />
+        {%- endblock %}
+
+        {%- block header %}
+        <div class="szu-fm-header">
+            <h1><span class="bracket">{</span><span class="FM"><span class="SZU">SZU</span>.FM</span><span class="bracket">}</span></h1>
+            <h2 class="sub-title">一个限流也能收听的电台</h2>
+        </div>
+        <div class="szu-fm-start">
+            <span class="sonic-left sonic-hide sonic"></span><a class="pure-button start-button" href="#start">立刻收听</a><span class="sonic-right sonic-hide sonic"></span>
+        </div>
+        {%- endblock %}
+
+        {%- block footer %}
+        <div class="footer">
+            <ul>
+                <li class="first"><a href="/aboutus">关于我们</a></li>
+                <li><a href="/joinus">加入我们</a></li>
+                <li><a href="/help">使用帮助</a></li>
+            </ul>
+        </div>
+        {%- endblock %}
