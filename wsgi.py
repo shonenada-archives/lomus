@@ -1,4 +1,4 @@
-from szufm.app import app
+from szufm.app import create_app
 
 
-application = app('szufm', 'production.conf')
+application = create_app('szufm', 'production.conf')
