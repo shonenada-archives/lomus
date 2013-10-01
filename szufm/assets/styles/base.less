@@ -1,5 +1,10 @@
+@font-for-windows: "Microsoft YaHei";
+@font-for-mac: "Hiragino Sans GB";
+@font-for-linux: "WenQuanYi Micro Hei";
+
 body {
     color: #777;
+    font-family: arial, @font-for-mac, @font-for-windows, @font-for-linux, sans-serif; 
 }
 
 .header {
@@ -11,21 +16,55 @@ body {
     border-bottom: 1px solid #eee;
     background: #fff;
     
-    h1{
+    h1 {
         font-family: "Fjalla One", sans-serif;
     }
 
-    h1.large{
+    h1.large {
         font-size: 48px;
     }
     
-    h1.narrow-margin{
+    h1.narrow-margin {
         margin:20px;
     }
     
-    h2{
+    h2 {
         font-weight: 300;
         margin: 0;
         color: #ccc;
+    }
+}
+
+.footer {
+
+    width: 430px;
+    font-size: 12px;
+    margin: 0 auto;
+    color: #3b8bba;
+    border-top: 1px #bbb solid;
+    text-align: center;
+    padding: 10px;
+
+    a {
+        color: #3b8bba;
+        text-decoration: none;
+    }
+
+    ul{
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        li:before {
+            content: '|';
+            color: #adada9;
+            margin-right: 10px;
+        }
+        
+        li.first:before {
+            content: '';
+            margin-right: 10px;
+        }
     }
 }

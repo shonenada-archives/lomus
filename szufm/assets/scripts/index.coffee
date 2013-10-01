@@ -18,9 +18,3 @@ $ ->
   bracket_slide 400, ->
     showTitle 1000, ->
       showSubTitle 500;
-
-$ ->
-  $('.start-button').mouseover ->
-    $('.sonic').removeClass('sonic-hide').addClass('sonic-show');
-  $('.start-button').mouseout ->
-    $('.sonic').removeClass('sonic-show').addClass('sonic-hide');
