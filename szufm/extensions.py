@@ -1,7 +1,7 @@
 from flask.ext.gears import Gears
 from flask.ext.sqlalchemy import SQLAlchemy
 from gears.compressors import SlimItCompressor
-from gears_less import LESSCompiler
+from gears_stylus import StylusCompiler
 from gears_clean_css import CleanCSSCompressor
 from gears_coffeescript import CoffeeScriptCompiler
 
@@ -10,7 +10,7 @@ gears = Gears()
 db = SQLAlchemy()
 
 _compilers = {
-    ".less": LESSCompiler.as_handler(),
+    '.styl': StylusCompiler.as_handler(),
     '.coffee': CoffeeScriptCompiler.as_handler()
 }
 
