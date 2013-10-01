@@ -33,3 +33,17 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+
+# Bower assets components folder.
+szufm/assets/components
+
+# development.conf and production.conf
+development.conf
+production.conf
+
+# Virtualenv folder
+venv
+
+# Temp database
+*.sqlite

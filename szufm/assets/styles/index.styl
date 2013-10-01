@@ -1,0 +1,66 @@
+.szu-fm-header
+    min-height: 80px;
+    margin: 0;
+    margin-top: 100px;
+    color: #333;
+    padding: 1em 2em;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    
+    & h1
+        font-family: "Fjalla One", sans-serif;
+        font-size: 750%;
+        margin: 0;
+        padding: 0;
+        color: #8058A5;
+        font-weight: 100;
+
+    & h1 span.SZU
+        color: #1f8dd6;
+        font-size: 150%;
+
+    & h1 span.bracket
+        font-size: 70%;
+        color: #444;
+
+    & h2.sub-title
+        font-weight: 100;
+        font-size: 170%;
+        margin: 0.02em 0 0.8em;
+        color: #999;
+        opacity: 0;
+
+.szu-fm-start
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 450px;
+    display: block;
+    height: 52px;
+
+    & .start-button
+        float: left;
+        font-size: 24px;
+        color: white;
+        border-radius: 5px;
+        background: #1f8dd6;
+        border: 1px solid #1f8dd6;
+
+    & .sonic-left
+        float: left;
+        width: 120px;
+        height: 52px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    & .sonic-right
+        float: right;
+        @extend .szu-fm-start .sonic-left;
+
+    & .sonic-show
+        opacity: 0.7;
+
+    & .sonic-hide
+        opacity: 0;
