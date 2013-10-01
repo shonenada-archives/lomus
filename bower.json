@@ -3,6 +3,7 @@
     "version": "0.1",
     "dependencies": {
         "jquery": "~1.10.2",
-        "pure": "~0.3.0"
+        "pure": "~0.3.0",
+        "reset-css": "http://meyerweb.com/eric/tools/css/reset/reset.css"
     }
 }
