@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+        {%- block htmlhead %}
+        <style>
+            body { background: url("/static/images/bg.png") #3B3E3E; }
+            .footer a { color: #ccc; }
+        </style>
+        {%- endblock %}
+
+        {%- block main %}
+        <div id="main" class="main">
+            <div class="nav">
+                <ul>
+                    <li><a href="/about">关于我们<span>About us</span></a></li>
+                    <li><a href="/join">加入我们<span>Join us</span></a></li>
+                    <li><a href="/help">使用帮助<span>Help</span></a></li>
+                    <li><a href="/fm">进入电台<span>FM</span></a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <header>
+                    <h2>{%- block title %}关于我们 <span>About us</span>{%- endblock %}</h2>
+                </header>
+                <article>
+                {%- block article %}
+                {%- endblock %}
+                </article>
+            </div>
+        </div>
+        {%- endblock %}

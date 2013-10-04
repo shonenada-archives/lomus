@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
-        <title>{% block title %}SZU.FM{% endblock %}</title>
+        <title>{% block web_title %}SZU.FM{% endblock %}</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="Content-Language" content="zh-CN" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,21 +17,21 @@
 
     <body>
         {%- block header %}
-        <div class="header">
+        <div id="header" class="header">
             <h1 class="large narrow-margin">SZU.FM</h1>
-            <h2>深大人自己的电台。</h2>
-        </div>
-        {%- endblock %}
-        {%- block nav %}
-        <div class="nav">
+            <h2>深大人自己的电台</h2>
         </div>
         {%- endblock %}
         {%- block main %}
-        <div class="main">
-        </div>
+
         {%- endblock %}
         {%- block footer %}
-        <div class="footer">
+        <div id="footer" class="footer">
+            <ul>
+                <li class="first"><a href="/about">关于我们</a></li>
+                <li><a href="/join">加入我们</a></li>
+                <li><a href="/help">使用帮助</a></li>
+            </ul>
         </div>
         {%- endblock %}
     </body>

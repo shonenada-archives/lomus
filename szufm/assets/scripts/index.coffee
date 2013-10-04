@@ -1,5 +1,6 @@
 $ ->
   # Initial layout
+  $("#footer").removeClass("absolute-footer").addClass("relative-footer");
   $(".bracket").css({'opacity': '0'});
   $(".FM").animate({'width': '-420px', 'opacity': '0'}, 1);
 
