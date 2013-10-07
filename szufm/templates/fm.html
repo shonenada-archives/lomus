@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+        {%- block htmlhead %}
+        <script src="{{ url_for('static', filename='scripts/player.js') }}" language="javascript"></script>
+        <link type="text/css" href="{{ url_for('static', filename='styles/player.css')}}" rel="stylesheet" />
+        <script>
+            $(function(){
+                playSong({url: "demo.mp4", title:'demo', artist: 'demo'});
+            })
+        </script>
+        {%- endblock %}
+
+        {%- block header %}
+        {%- endblock %}
+
+        {%- block main %}
+        <div id="main">
+            <video id="szu-fm-player"></video>
+            <input id="pause-time" type="hidden" />
+            <div class="default">
+                <div id="music-box">
+                    <div id="btn-rewind" class="button"></div>
+                    <div id="btn-play" class="button btn-play"></div>
+                    <div id="btn-ff" class="button"></div>
+
+                    <div id="process-controller">
+                        <div id="song-name">SZU.FM</div>
+                        <div id="song-time">00:00 | 00:00</div>
+                        <div id="process-bar"></div>
+                        <div id="process-block"></div>
+                    </div>
+
+                    <div id="voice-controller">
+                        <div id="btn-mute" class="button"></div>
+                        <div id="volume-bar"></div>
+                        <div id="volume-block"></div>
+                        <div id="btn-full-voice" class="button"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {%- endblock %}
